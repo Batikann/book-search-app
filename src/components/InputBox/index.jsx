@@ -17,6 +17,7 @@ function InputBox() {
     e.preventDefault()
     if (val) {
       const { data: res } = await getSearchValue(val)
+      console.log(res)
       dispatch(addBooks(res.items))
       setVal('')
     } else {
