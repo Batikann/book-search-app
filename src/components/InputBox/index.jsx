@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchBooks } from '../../redux/services/bookServices'
+import { loadingChange } from '../../redux/books/booksSlice'
 
 function InputBox() {
-  const page = useSelector((state) => state.books.page)
   const [val, setVal] = useState('')
   const dispatch = useDispatch()
   const inputValHandler = (e) => {
@@ -15,6 +15,7 @@ function InputBox() {
     e.preventDefault()
     if (val) {
       dispatch(fetchBooks(val, 20))
+      dispatch(loadingChange(true))
       setVal('')
     } else {
       alert('Lütfen Değer Giriniz!!')

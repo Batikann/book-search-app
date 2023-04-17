@@ -1,14 +1,14 @@
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import noImage from '@/imgs/noImage.webp'
-import InfiniteScroll from 'react-infinite-scroll-component'
+import { LoadingPosts } from '../Skeleton'
 
 function Book() {
   const books = useSelector((state) => state.books.items)
-
+  const load = useSelector((state) => state.books.isLoading)
   return (
-    <>
-      {books.length > 0 ? (
+    <div className="flex flex-wrap gap-8 justify-center z-50 relative">
+      {!load ? (
         books?.map((book, i) => {
           return (
             <Link key={i} to={`book/${book.id}`}>
@@ -39,9 +39,9 @@ function Book() {
           )
         })
       ) : (
-        <div>No Search Not Yet</div>
+        <LoadingPosts />
       )}
-    </>
+    </div>
   )
 }
 export default Book

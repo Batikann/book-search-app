@@ -7,11 +7,13 @@ export const booksSlice = createSlice({
     items: [],
     isLoading: false,
   },
-  reducers: {},
+  reducers: {
+    loadingChange: (state, action) => {
+      state.isLoading = action.payload
+    },
+  },
   extraReducers: (builder) => {
-    builder.addCase(fetchBooks.pending, (state) => {
-      state.isLoading = true
-    })
+    builder.addCase(fetchBooks.pending, (state) => {})
     builder.addCase(fetchBooks.fulfilled, (state, action) => {
       state.isLoading = false
       state.items = action.payload
@@ -19,5 +21,5 @@ export const booksSlice = createSlice({
   },
 })
 
-export const { addBooks } = booksSlice.actions
+export const { addBooks, loadingChange } = booksSlice.actions
 export default booksSlice.reducer
