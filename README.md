@@ -25,4 +25,5 @@
 <br/>
 
 <h3>Sonuçların Listelenmesi</h3>
-<img scr="https://user-images.githubusercontent.com/71382413/232593892-656b1a7b-325a-498a-9781-9076ca1a1732.png" alt="results"/>
+<img src="https://user-images.githubusercontent.com/71382413/232593892-656b1a7b-325a-498a-9781-9076ca1a1732.png" alt="results"/>
+
