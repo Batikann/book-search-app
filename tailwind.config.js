@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        header: "url('./src/imgs/bgHeader.jpg')",
-        showcase: "url('./src/imgs/bgShowcase.jpg')",
+        showcase:
+          "url('https://github.com/Batikann/book-search-app/blob/master/src/imgs/bgShowcase.jpg')",
       },
       fontFamily: {
         roboto: ['Roboto'],

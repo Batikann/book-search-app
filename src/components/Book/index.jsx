@@ -6,7 +6,6 @@ import { LoadingPosts } from '../Skeleton'
 function Book() {
   const books = useSelector((state) => state.books.items)
   const load = useSelector((state) => state.books.isLoading)
-  console.log(load)
   return (
     <>
       <div className="flex flex-wrap gap-8 justify-center z-50 relative">
