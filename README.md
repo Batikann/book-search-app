@@ -5,7 +5,7 @@
 <pre>cd book-search-app</pre>
 <pre>yarn install</pre>
 <pre>yarn dev</pre>
-<p>Tarayacınıza <pre>http://localhost:5173</pre> yapıştırın.</p>
+<pre>http://localhost:5173</pre>
 
 
 <a href='https://book-search-app-patika.netlify.app/' target="_blank">Proje Linki</a>
