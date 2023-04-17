@@ -1,7 +1,7 @@
 <h1>Proje Tanıtımı</h1>
 <p>Bu projemde Google Books API kullanarak kullanıcının aradığı değere göre istenilen veri getirilir.Kullanıcı deneyimi daha iyi olsun diye bir yükleme ekranı ekledim.Kullanıcı istediği kitap hakkında bilgi almak için üstüne basıp detay sayfasına gidebilir.</p>
 
-<a href='https://book-search-app-patika.netlify.app/' target='_blank'>Proje Linki</a>
+<a href='https://book-search-app-patika.netlify.app/' target='_blank' class="font-size:30px">Proje Linki</a>
 
 <h2>Kullandığım Teknolojiler</h2>
 <ul>
