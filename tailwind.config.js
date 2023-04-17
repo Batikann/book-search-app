@@ -5,7 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         showcase:
-          "url('https://github.com/Batikann/book-search-app/blob/master/src/imgs/bgShowcase.jpg')",
+          "url('https://assets.weforum.org/article/image/JMF96ETfn1kSViVnUou1Z0XIDwWcPpT5mrPc7-ytpAc.jpg')",
       },
       fontFamily: {
         roboto: ['Roboto'],
