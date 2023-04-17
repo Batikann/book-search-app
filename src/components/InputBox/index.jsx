@@ -23,7 +23,7 @@ function InputBox() {
   }
   return (
     <div>
-      <div className="bg-header w-full h-96 object-center bg-cover flex flex-col px-8 justify-center items-center gap-y-9 ">
+      <div className="w-full h-96 object-center bg-cover flex flex-col px-8 justify-center items-center gap-y-9 relative z-50 ">
         <h1 className="text-4xl text-white uppercase font-bold tracking-wider">
           Search Book Google Database
         </h1>
