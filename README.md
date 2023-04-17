@@ -15,14 +15,14 @@
 
 
 <h3>Açılış Ekranı</h3>
-<img src="https://user-images.githubusercontent.com/71382413/232593855-0d3bd8e6-05c7-455c-ab5f-6d7f2bbb7660.png" alt="acilis-ekrani"/>
+<img src="https://user-images.githubusercontent.com/71382413/232593855-0d3bd8e6-05c7-455c-ab5f-6d7f2bbb7660.png" alt="homepage"/>
 
 <br/>
 
 <h3>Yükleme Ekranı</h3>
-![loading](https://user-images.githubusercontent.com/71382413/232593873-69749642-b9c1-40f8-90f4-4ec02ce6bdf9.png)
+<img src="https://user-images.githubusercontent.com/71382413/232593873-69749642-b9c1-40f8-90f4-4ec02ce6bdf9.png" alt="loading-screen"/>
 
 <br/>
 
 <h3>Sonuçların Listelenmesi</h3>
-![Screenshot 2023-04-17 at 22-30-48 Book Search App](https://user-images.githubusercontent.com/71382413/232593892-656b1a7b-325a-498a-9781-9076ca1a1732.png)
+<img scr="https://user-images.githubusercontent.com/71382413/232593892-656b1a7b-325a-498a-9781-9076ca1a1732.png" alt="results"/>
