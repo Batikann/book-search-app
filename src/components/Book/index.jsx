@@ -4,10 +4,12 @@ import noImage from '@/imgs/noImage.webp'
 import { LoadingPosts } from '../Skeleton'
 
 function Book() {
+  //Store'dan books datamı ve loading durumunu getirdim.
   const books = useSelector((state) => state.books.items)
   const load = useSelector((state) => state.books.isLoading)
   return (
     <>
+      {/*Eğer load durumu false ise gelen booksları maple ve yazdır. true ise yani istek atıp beklerken loading ekranını göstericek */}
       <div className="flex flex-wrap gap-8 justify-center z-50 relative">
         {!load ? (
           books?.map((book, i) => {

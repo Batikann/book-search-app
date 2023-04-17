@@ -11,6 +11,7 @@ export const LoadingCard = () => {
 }
 
 export const LoadingPosts = () => {
+  //Burası kötü oldu farkındayım düzelticem burada 10 tane dizi elemanı verip loading olurken skeleton yapısını göstermek için yaptım.
   const loadPages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   return (
     <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-4 grid-cols-1 sm:grid-cols-2">

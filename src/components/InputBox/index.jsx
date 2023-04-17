@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { fetchBooks } from '../../redux/services/bookServices'
 import { loadingChange } from '../../redux/books/booksSlice'
 
@@ -11,6 +11,8 @@ function InputBox() {
     setVal(e.target.value)
   }
 
+  //fetchbooks methodu redux klasörü içinde ki bookServicesden geliyor.Burda ki amaç kulanıcıdan alınan veri ile apiye istek atıyoruz ve loading durumu true ya geçiyor ve loading ekranını gösteriyoruz.
+  //Boş değer gelmemesi için alert ekledim
   const getApiVal = async (e) => {
     e.preventDefault()
     if (val) {
