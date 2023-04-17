@@ -15,7 +15,7 @@
 
 
 <h3>Açılış Ekranı</h3>
-![Screenshot 2023-04-17 at 22-30-15 Book Search App](https://user-images.githubusercontent.com/71382413/232593855-0d3bd8e6-05c7-455c-ab5f-6d7f2bbb7660.png)
+<img src="https://user-images.githubusercontent.com/71382413/232593855-0d3bd8e6-05c7-455c-ab5f-6d7f2bbb7660.png" alt="acilis-ekrani"/>
 
 <br/>
 
