@@ -1,8 +1,11 @@
+import { useSelector } from 'react-redux'
 import Book from '../Book'
 
 function BooksShowecase() {
+  const load = useSelector((state) => state.books.isLoading)
+  console.log(load)
   return (
-    <div className="w-full p-8 min-h-screen bg-[url('https://assets.weforum.org/article/image/JMF96ETfn1kSViVnUou1Z0XIDwWcPpT5mrPc7-ytpAc.jpg')] bg-cover relative">
+    <div className="w-full p-8 min-h-screen bg-showcase bg-cover relative">
       {/* <h2 className="font-bold text-4xl text-center mb-8 uppercase text-white tracking-wider">
         Books
       </h2> */}

@@ -1,9 +1,11 @@
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import noImage from '@/imgs/noImage.webp'
+import InfiniteScroll from 'react-infinite-scroll-component'
 
 function Book() {
   const books = useSelector((state) => state.books.items)
+
   return (
     <>
       {books.length > 0 ? (

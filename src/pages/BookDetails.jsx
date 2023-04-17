@@ -14,7 +14,7 @@ function BookDetails() {
           className="bg-white text-indigo-600 font-bold w-20 p-1 hover:scale-125 hover:bg-indigo-800 hover:text-white rounded-md "
         />
       </Link>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 bg-white p-7 xl:max-w-7xlxl max-w-4xl rounded-md shadow-lg cursor-pointer lg:hover:scale-105">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 bg-white p-7 xl:max-w-7xlxl max-w-4xl rounded-md shadow-lg cursor-pointer">
         <div className="left-side flex-[30%]">
           <img
             src={
@@ -23,7 +23,7 @@ function BookDetails() {
                 : noImage
             }
             alt=""
-            className="bg-cover w-64 h-72 object-cover"
+            className="bg-cover w-64 h-72 object-center"
           />
           <a
             href={bookDetails.volumeInfo.previewLink}

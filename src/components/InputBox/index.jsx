@@ -1,14 +1,12 @@
 import { useState } from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
-import { getSearchValue } from '../../services/book'
-import { useDispatch } from 'react-redux'
-import { addBooks } from '../../redux/books/booksSlice'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchBooks } from '../../redux/services/bookServices'
 
 function InputBox() {
+  const page = useSelector((state) => state.books.page)
   const [val, setVal] = useState('')
-
   const dispatch = useDispatch()
-
   const inputValHandler = (e) => {
     setVal(e.target.value)
   }
@@ -16,9 +14,7 @@ function InputBox() {
   const getApiVal = async (e) => {
     e.preventDefault()
     if (val) {
-      const { data: res } = await getSearchValue(val)
-      console.log(res)
-      dispatch(addBooks(res.items))
+      dispatch(fetchBooks(val, 20))
       setVal('')
     } else {
       alert('Lütfen Değer Giriniz!!')
@@ -26,7 +22,7 @@ function InputBox() {
   }
   return (
     <div>
-      <div className="bg-[url('https://images6.alphacoders.com/346/346199.jpg')] w-full h-96 object-center bg-cover flex flex-col px-8 justify-center items-center gap-y-9 ">
+      <div className="bg-header w-full h-96 object-center bg-cover flex flex-col px-8 justify-center items-center gap-y-9 ">
         <h1 className="text-4xl text-white uppercase font-bold tracking-wider">
           Search Book Google Database
         </h1>
